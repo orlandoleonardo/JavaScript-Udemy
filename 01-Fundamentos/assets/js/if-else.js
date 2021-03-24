@@ -38,6 +38,6 @@ const diasLetras = {
 }
 
 //con un arreglo
-let diasLetras2 = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
+let diasLetras2 = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 
 console.log(diasLetras[dia]);
