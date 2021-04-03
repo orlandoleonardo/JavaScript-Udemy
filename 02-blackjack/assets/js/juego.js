@@ -64,7 +64,7 @@ const turnoComputadora = (puntosMinimos) => {
     do{
         const carta = pedirCarta();
         puntosComputadora += valorCarta(carta);
-        puntosHTML[0].innerText = puntosComputadora;
+        puntosHTML[1].innerText = puntosComputadora;
     
         const imgCarta = document.createElement('img');
         imgCarta.src = `assets/cartas/${carta}.png`;
