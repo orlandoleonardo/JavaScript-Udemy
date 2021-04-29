@@ -1,0 +1,16 @@
+npm run build (para recargar la configuración de webpack)
+
+npm i -D webpack-dev-server (servidor de desarrollo de webpack, esto es para dejar de trabajar con el protocolo file, y pasar a un protocolo web)
+
+también sirve para hacer correr la aplicación simplemente con el comando
+npm start
+pero para eso antes hay que agregar al package.json en la parte de scripts la siguiente línea
+"start": "webpack-dev-server --open"
+
+En la consola leeremos [WDS] Live Reloading enabled, lo cual significa que los cambios en los archivos serán reflejados automáticamente.
+
+-D es el entorno de desarrollo
+
+se instalan componentes para trabajar con css
+npm install -D css-loader style-loader
+
