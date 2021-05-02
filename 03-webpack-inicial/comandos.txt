@@ -29,3 +29,10 @@ npm install babel-preset-minify --save-dev
 npm install babel-minify-webpack-plugin --save-dev
 
 npm install --save-dev @babel/preset-env
+
+npm install --save-dev clean-webpack-plugin
+
+///////*/////////
+comandos github
+ //para restaurar archivos modificados localmente a la última versión de Gitub
+git checkout -- .
