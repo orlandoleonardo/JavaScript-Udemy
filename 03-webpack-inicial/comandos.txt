@@ -17,3 +17,15 @@ npm install -D css-loader style-loader
 npm i -D mini-css-extract-plugin
 
 npm i -D optimize-css-assets-webpack-plugin
+
+npm install -D file-loader
+
+npm i copy-webpack-plugin --save-dev
+
+npm install --save-dev @babel/core
+
+npm install babel-preset-minify --save-dev
+
+npm install babel-minify-webpack-plugin --save-dev
+
+npm install --save-dev @babel/preset-env
