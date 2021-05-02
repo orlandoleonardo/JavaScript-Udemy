@@ -14,3 +14,6 @@ En la consola leeremos [WDS] Live Reloading enabled, lo cual significa que los c
 se instalan componentes para trabajar con css
 npm install -D css-loader style-loader
 
+npm i -D mini-css-extract-plugin
+
+npm i -D optimize-css-assets-webpack-plugin
