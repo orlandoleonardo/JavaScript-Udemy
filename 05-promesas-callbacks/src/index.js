@@ -1,9 +1,9 @@
 import './styles.css';
-import {buscarHeroe} from './js/callbacks'
-const heroeId = 'cap';
+import {promesaLenta, promesaMedia, promesaRapida} from './js/promesas'
 
+// promesaLenta.then(console.log);
+// promesaMedia.then(console.log);
+// promesaRapida.then(console.log);
 
-//callback es una función que se envía como argumento
-buscarHeroe(heroeId, (heroe) => {
-    console.log(heroe);    
-});
+Promise.race([promesaLenta, promesaMedia, promesaRapida])
+    .then(console.log) //por el race solo imprime la rápida
