@@ -1,6 +1,7 @@
-const { ResolvePlugin } = require("webpack")
+// const { ResolvePlugin } = require("webpack")
 
 const jokeUrl = 'https://api.chucknorris.io/jokes/random'
+const urlUsuarios = 'https://reqres.in/api/users?page=2';
 
 fetch(jokeUrl).then(resp => resp.json())
     .then(({id,value}) => {
@@ -19,10 +20,16 @@ const obtenerChiste = async() => {
     } catch (error) {
         throw error;
     }
+}
 
-    
+const obtenerUsuarios = async() => {
+    const resp = await fetch(urlUsuarios);
+    const {data:usuarios} = await resp.json();//cambia nombre data por usuarios
+
+    return usuarios;
 }
 
 export {
-    obtenerChiste 
+    obtenerChiste,
+    obtenerUsuarios
 }
